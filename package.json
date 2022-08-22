@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "Xu": "prettier --single-quote --trailing-comma all --write 'src/**/*.{js,json,scss}'",
-    "start": "nodemon src/index.js",
+    "start": "node src/index.js",
     "watch": "node-sass -w src/resource/scss/app.scss src/public/css/app.css",
     "watchheader": "node-sass -w src/resource/scss/Header.scss src/public/css/Header.css",
     "watchhome": "node-sass -w src/resource/scss/Home.scss src/public/css/Home.css",
