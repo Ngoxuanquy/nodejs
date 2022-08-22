@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <link rel="stylesheet" href="../.././public/css/Home.css">
+    <link rel="stylesheet" type="icon" href="https://scontent.fhan2-1.fna.fbcdn.net/v/t39.30808-6/275549265_119316327349050_7133039339301134607_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=-Q_O0zOexGEAX-VG_XL&_nc_ht=scontent.fhan2-1.fna&oh=00_AT9o0KErLgcU12wW7-9rS8-bZFudG_GQGV-eA2QV21fzdg&oe=6305D614">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     
+</head>
+    <style>
+      
+    </style>
+<body>
+  <div class="div_chinh" >
+  <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+
+    </div>
+
+    <img class="img_chinh" src="https://1.bp.blogspot.com/-NGfw-7PTOJg/XqPM2Jsf6LI/AAAAAAAAip8/kZElxP2v0u01zQEp9zrHN_ZQIQydoV2fwCLcBGAsYHQ/s1600/Hinh-anh-dep-nhat-the-gioi%2B%25282%2529.jpg" data-aos="fade-up">
+  </div>
+  <i class="fa-brands fa-facebook-messenger" id="messanger"></i>
+  <div id="phone">
+    <div id="sdt"><a>0580401978 </a></div>
+   <i class="fa-solid fa-phone-flip" id="phone"> </i>
+  </div>
+             <div class="" id="js">
+                      <div class="giaodich" data-aos="fade-right">
+                        <div id="transaction-count" class="giaodich_so">
+                          1,000
+                        </div>
+                        <div class="text-xl text-blue-200">lượt giao dịch</div>
+                      </div>
+
+                  <div class="danhgia" data-aos="fade-up">
+                    <div id="city-count" class="danhgia_so">
+                      98
+                    </div>
+                    <div class="">Lượt Đánh Giá</div>
+                  </div>
+
+                  <div class="khachhang"  data-aos="fade-left">
+                    <div id="customer-count" class="khachhang_so">
+                      1,500
+                    </div>
+                    <div class="">khách hàng</div>
+                  </div>
+    
+              </div>
+  
+
+                    {{!-- <form method="post" action="/chitiet/giohang" > --}}
+                <div class="list_img" >
+                {{#each vays}}
+              <div className='container' data-aos="fade-up"
+     data-aos-duration="3000">
+                <div class="column" >
+                  <div class="post-module">
+                    <div class="thumbnail"   >
+                      <div class="date" >
+                        <div class="day">-17%</div>
+   
+                      </div>
+                   
+                        <a href="/chitiet/{{this.slug}}">
+          
+                        <img src="{{this.img}}"  />
+                        </a>
+                    </div>
+                    <div class="post-content">
+                      <div class="category"  >Photos</div>
+                      <label class="title" >{{this.name }}</label>
+                      <label class="sub_title" ">{{this.Gia}}đ</label>
+      
+                      <div class="post-meta"><span class="timestamp"><i class="fa fa-clock-">o</i>
+                          6 mins ago</span><span class="comments"><i class="fa fa-comments"></i><a href="#">39 comments</a></span></div>
+                    </div>
+                  </div>
+                </div>
+      
+                </div>
+
+               
+               {{/each}}
+                    </div>
+                </div>
+
+                {{!-- Sản phẩm bán chạy --}}
+          
+                    <div class="night">
+                  <div class="shooting_star"></div>
+                  <div class="shooting_star"></div>
+                  <div class="shooting_star"></div>
+                  <div class="shooting_star"></div>
+                  <div class="shooting_star"></div>
+                  <div class="shooting_star"></div>
+                  <div class="shooting_star"></div>
+                  <div class="shooting_star"></div>
+                  <div class="shooting_star"></div>
+                  <div class="shooting_star"></div>
+                  <div class="shooting_star"></div>
+                  <div class="shooting_star"></div>
+                  <div class="shooting_star"></div>
+                  <div class="shooting_star"></div>
+                  <div class="shooting_star"></div>
+                  <div class="shooting_star"></div>
+                  <div class="shooting_star"></div>
+                  <div class="shooting_star"></div>
+                  <div class="shooting_star"></div>
+                  <div class="shooting_star"></div>
+                      <div class="text_banchay" data-aos="fade-right">
+                          <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+                          <div class="content">
+                            <div class="content__container">
+                              <p class="content__container__text">
+                                Sản Phẩm
+                              </p>
+                              <ul class="content__container__list">
+                                <li class="content__container__list__item">Bán Chạy !</li>
+                                <li class="content__container__list__item">Săn Lùng !</li>
+                                <li class="content__container__list__item">Ưa Chuộng !</li>
+                                <li class="content__container__list__item">everybody !</li>
+                              </ul>
+                            </div>
+                          </div>
+                      </div>
+                      <div>
+                        <img id="img_banchay" data-aos="fade-up" onclick="handerClick()" src="https://scontent.fhan2-2.fna.fbcdn.net/v/t39.30808-6/294690269_153789327237372_3504768368500252322_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=gV5l4KzUmgYAX82zF3T&_nc_ht=scontent.fhan2-2.fna&oh=00_AT9afjmbPrnZBlzXRbriclFnyFnqRHwEUkSEyWi2DfiJPw&oe=630620B6" />
+
+                      </div>
+                      </div>
+                     </div>
+
+                        <div >
+                            <h1 id="h1" data-aos="fade-up" style="color: coral;">Váy Đặc Biệt</h1>
+                           <div class="list_img1" style="width: 90%;margin-left: 90px" >
+                {{#each vays}}
+              <div className='container_db' data-aos="fade-up">
+                <div class="column" >
+                  <div class="post-module">
+                    <div class="thumbnail"   >
+                      <div class="date" >
+                        <div class="day">-17%</div>
+                      </div>
+                        <a href="/chitiet/{{this.slug}}">
+                        <img src="{{this.img}}"  />
+                        </a>
+                    </div>
+                    <div class="post-content">
+                      <div class="category"  >Photos</div>
+                      <label class="title">{{this.name}}</label>
+                      <label class="sub_title">{{this.Gia}}đ</label>
+                      <div class="post-meta"><span class="timestamp"><i class="fa fa-clock-">o</i>
+                          6 mins ago</span><span class="comments"><i class="fa fa-comments"></i><a href="#">39 comments</a></span></div>
+                    </div>
+                  </div>
+                </div>
+
+               
+                </div>
+               {{/each}}
+               </div>
+                    </div>
+                   
+                  
+                        <div class="text_giamgia" data-aos="fade-up"> 
+                          Những Váy Được Giảm Giá
+                        </div>
+                  <div class="box_giamgia" >
+                        <div class="giamgia"  >
+                            <img data-aos="fade-right"
+                           data-aos-duration="3000" src="https://scontent.fhan2-2.fna.fbcdn.net/v/t39.30808-6/294690269_153789327237372_3504768368500252322_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=gV5l4KzUmgYAX82zF3T&_nc_ht=scontent.fhan2-2.fna&oh=00_AT9afjmbPrnZBlzXRbriclFnyFnqRHwEUkSEyWi2DfiJPw&oe=630620B6" />
+                        </div>
+                         <div class="giamgia" >
+                            <img data-aos="fade-up"
+                           data-aos-duration="3000" src="https://scontent.fhan2-2.fna.fbcdn.net/v/t39.30808-6/290359399_151185510828798_851458102551719462_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a26aad&_nc_ohc=96LI1HUeKMYAX_TZeui&tn=AvM0IxdMUQSCtue5&_nc_ht=scontent.fhan2-2.fna&oh=00_AT-RCG8WhLvBsaUV-v4FUDz-I5q1gEe0bVp7r6NoZlyYBA&oe=6305ADA9" />
+                        </div>
+                         <div class="giamgia" >
+                            <img data-aos="fade-up"
+                           data-aos-duration="3000" src="https://scontent.fhan2-2.fna.fbcdn.net/v/t39.30808-6/290259511_150412364239446_1563624648606508324_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=gsqAIKNuPAoAX_DcUQN&_nc_ht=scontent.fhan2-2.fna&oh=00_AT-jkunYWWm_NWsomUwe5MbZeT0Lq2ftSCNJCR8tPNcJ7w&oe=630512DD" />
+                        </div>
+                         <div class="giamgia" >
+                            <img data-aos="fade-left"
+                           data-aos-duration="3000" src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/299681747_160174749932163_4690144077390544807_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_ohc=sNl5nD9gEKgAX8v8TAq&tn=AvM0IxdMUQSCtue5&_nc_ht=scontent.fhan2-3.fna&oh=00_AT8nFRCfiYVUO8F_-XjNTCkku57pXSZOH88_qmWNH98_Mw&oe=6305B302" />
+                        </div>
+                  </div>
+             
+          
+      </body>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+     <script>
+  AOS.init();
+
+     (function($) {
+    $(document).ready(function() {
+        $('.list_img1').slick({
+           infinite: true,
+          slidesToShow: 5,
+          slidesToScroll: 3,
+           autoplay: true,
+          autoplaySpeed: 1000,
+         
+        });
+    });
+	
+})( jQuery );
+    // function([string1, string2],target id,[color1,color2])    
+   
+ consoleText(['STAINO - SHOP !', 'SHOP - ODER !', 'Made with Love !'], 'text',['white','aqua','lightblue']);
+
+function consoleText(words, id, colors) {
+  if (colors === undefined) colors = ['#fff'];
+  var visible = true;
+  var con = document.getElementById('console');
+  var letterCount = 1;
+  var x = 1;
+  var waiting = false;
+  var target = document.getElementById(id)
+  target.setAttribute('style', 'color:' + colors[0])
+  window.setInterval(function() {
+
+    if (letterCount === 0 && waiting === false) {
+      waiting = true;
+      target.innerHTML = words[0].substring(0, letterCount)
+      window.setTimeout(function() {
+        var usedColor = colors.shift();
+        colors.push(usedColor);
+        var usedWord = words.shift();
+        words.push(usedWord);
+        x = 1;
+        target.setAttribute('style', 'color:' + colors[0])
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (letterCount === words[0].length + 1 && waiting === false) {
+      waiting = true;
+      window.setTimeout(function() {
+        x = -1;
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (waiting === false) {
+      target.innerHTML = words[0].substring(0, letterCount)
+      letterCount += x;
+    }
+  }, 120)
+  window.setInterval(function() {
+    if (visible === true) {
+      con.className = 'console-underscore hidden'
+      visible = false;
+
+    } else {
+      con.className = 'console-underscore'
+
+      visible = true;
+    }
+  }, 400)
+}
+
+  function animateNumber(finalNumber, delay, startNumber = 0, callback) {
+  let currentNumber = startNumber
+  const interval = window.setInterval(updateNumber, delay)
+  function updateNumber() {
+    if (currentNumber >= finalNumber) {
+      clearInterval(interval)
+    } else {
+      currentNumber++
+      callback(currentNumber)
+    }
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  animateNumber(1000, 10, 0, function (number) {
+    const formattedNumber = number.toLocaleString()
+    document.getElementById('transaction-count').innerText = formattedNumber
+  })
+  
+  animateNumber(98, 50, 0, function (number) {
+    const formattedNumber = number.toLocaleString()
+    document.getElementById('city-count').innerText = formattedNumber
+  })
+  
+  animateNumber(1500, 10, 0, function (number) {
+    const formattedNumber = number.toLocaleString()
+    document.getElementById('customer-count').innerText = formattedNumber
+  })
+})
+
+ window.addEventListener('mousemove', handleMouseMove);
+window.addEventListener('resize', handleWindowResize);
+
+const spansSlow = document.querySelectorAll('.spanSlow');
+const spansFast = document.querySelectorAll('.spanFast');
+
+let width = window.innerWidth;
+
+function handleMouseMove(e) {
+  let normalizedPosition = e.pageX / (width/2) - 1;
+  let speedSlow = 100 * normalizedPosition;
+  let speedFast = 200 * normalizedPosition;
+  spansSlow.forEach((span) => {
+    span.style.transform = `translate(${speedSlow}px)`;
+  });
+  spansFast.forEach((span) => {
+    span.style.transform = `translate(${speedFast}px)`
+  })
+}
+//we need to recalculate width when the window is resized
+function handleWindowResize() {
+  width = window.innerWidth;
+}
+
+
+//chuyển ảnh
+    var index = 1;
+      handerClick = function() {
+          var imgs = ["https://scontent.fhan2-2.fna.fbcdn.net/v/t39.30808-6/294690269_153789327237372_3504768368500252322_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=gV5l4KzUmgYAX82zF3T&_nc_ht=scontent.fhan2-2.fna&oh=00_AT9afjmbPrnZBlzXRbriclFnyFnqRHwEUkSEyWi2DfiJPw&oe=630620B6",
+          "https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/294108476_153432870606351_4932789313438563849_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=MH2x4AQwM_4AX-t40it&_nc_oc=AQlioGG2BtFTbXew5YtWy-iAtsNXg_wbbQlm43BkL3CkPnSpZjlIEWD7c-I6p08EXSQ&tn=AvM0IxdMUQSCtue5&_nc_ht=scontent.fhan2-4.fna&oh=00_AT-KnY49LiZAwAqqDva0AGQUMVY8Z8rpLJnNbPWSDS3RZw&oe=6305325F",
+          "https://scontent.fhan2-1.fna.fbcdn.net/v/t39.30808-6/292075585_152685514012131_954568672883300005_n.jpg?stp=cp1_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Y_w4_K4vDq0AX8X3z5B&_nc_ht=scontent.fhan2-1.fna&oh=00_AT_KB-kqiHXLzOlyQ7fvKToloWf1EQYy5VzaSill0JbLAA&oe=63055644"]
+
+          document.getElementById('img_banchay').src = imgs[index];
+          index++;
+          if(index == 3) {
+            index=0;
+          }
+    }
+    setInterval(handerClick, 2000);
+
+  
+
+        </script>
+</html>
+  
+             

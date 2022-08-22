@@ -1,0 +1,55 @@
+* {
+  padding: 0px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.form {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 20px;
+  margin-left: 30px; }
+
+.form .left {
+  width: 80%;
+  text-align: center;
+  justify-content: center;
+  margin-top: 30px; }
+
+.form div {
+  margin-top: 40px; }
+
+.form div img {
+  margin-top: -40px; }
+
+.form .img_chinh {
+  width: 700px;
+  height: 600px; }
+
+.form #cong, #tru {
+  width: 30px;
+  height: 30px; }
+
+.form #soluong {
+  width: 30px;
+  height: 30px;
+  border: 2px solid black; }
+
+.form .Gia {
+  font-size: 25px; }
+
+.form .mau {
+  font-size: 25px; }
+
+.form .size {
+  font-size: 25px; }
+
+.form .submit {
+  width: 100%; }
+
+.form .submit #them_giohang {
+  width: 40%;
+  height: 40px; }
+
+.form .submit #mua_ngay {
+  width: 40%;
+  height: 40px; }

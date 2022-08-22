@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <link rel="stylesheet" href="../.././public/css/Home.css">
+</head>
+    <style>
+ 
+    </style>
+<body>
+        <div id="root1">
+           
+
+        </div>
+      
+</body>
+        <script>
+            import React from 'react';
+            import '../.././public/css/Home.css';
+        </script>
+      <script type="text/babel">
+
+
+          function App(){
+              return (
+                <div class="list_img">
+                  
+                {{#each vays }}
+                   {{vays.STT}} 
+               {{/each}}
+                
+                </div>
+              )
+          }
+
+         ReactDOM.render(<App />, document.getElementById('root1'));
+    </script>
+</html>
+  
+             

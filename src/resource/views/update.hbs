@@ -1,0 +1,36 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Giá</th>
+      <th scope="col">img</th>
+      <th scope="col">img_phu1</th>
+      <th scope="col">img_phu1</th>
+      <th scope="col">Sửa</th>
+      <th scope="col">Xóa</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    {{#each vays}}
+    <tr>
+      <th scope="row">{{sum @index 1}}</th>
+      <td>{{this.name}}</td>
+      <td>{{this.Gia}}</td>
+      <td><img src="{{this.img}}" style="width: 200px; height: 200px;"/></td>
+      <td><img src="{{this.img_phu1}}" style="width: 200px; height: 200px;"/></td>
+      <td><img src="{{this.img_phu2}}" style="width: 200px; height: 200px;"/></td>
+
+      <td>
+        <a href="/update/{{this._id}}/edit" class="">Sửa</a>
+      </td>
+      <td>
+        <a href="" class="">Xóa</a> 
+
+      </td>
+    </tr>
+    {{/each}}
+
+  </tbody>
+</table>

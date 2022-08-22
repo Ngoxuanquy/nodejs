@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../src/public/css/chitiet.css">
+     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<style>
+	.Header{
+		background-color: black;
+	}
+</style>
+<body>
+
+    <form action="/chitiet/giohang" method="post">
+    <input name="name" value="{{vay.name}}" hidden>
+    <input name="img" value="{{vay.img}}" hidden>
+    <input name="Gia" value="{{vay.Gia}}" hidden>
+    <input name="slug" value="{{vay.slug}}" hidden>
+
+<div class="form">
+   <section class="product">
+	<div class="product__photo">
+		<div class="photo-container">
+			<div class="photo-main">
+				
+				<img src="{{vay.img}}" alt="green apple slice" id="img_chitiet"  data-aos="fade-right" />
+			</div>
+			<div class="photo-album">
+				<ul>
+					<li><img src="{{vay.img}}" id="thu1"  onmouseover="changeImage('thu1')" /></li>
+					<li> <img src="{{vay.img_phu1}}" id="thu2"  onmouseover="changeImage('thu2')" /> </li>
+					<li> <img src="{{vay.img_phu2}}" id="thu3"  onmouseover="changeImage('thu3')" /></li>
+					<li></li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="product__info">
+		<div class="title" data-aos="fade-down">
+			<h1>{{vay.name}}</h1>
+			<span>COD: 45999</span>
+		</div>
+		<div class="price" data-aos="fade-left">
+			R$ <span >{{vay.Gia}}</span>
+		</div>
+		<div class="variant">
+			<h3>SELECT A COLOR</h3>
+			<ul>
+		
+						SIZE: 
+					<select name="size">
+						<option>S</option>
+						<option>M</option>
+						<option>L</option>
+						<option>XL</option>
+						<option>XXL</option>
+						<option>XXXL</option>
+					</select>
+					Màu:
+					<select name="mau">
+						<option>Đen</option>
+						<option>Hồng</option>
+						<option>L</option>
+						<option>XL</option>
+						<option>XXL</option>
+						<option>XXXL</option>
+					</select>
+				
+				
+			</ul>
+		</div>
+		<div>
+			<input type="button" id="btn_cong" value="+"  data-aos="fade-right">
+			<input value="1" id="text_soluong" name="so" data-aos="fade-down">
+			<input type="button" id="btn_tru" value="-" data-aos="fade-left">
+		</div>
+		<div class="description">
+			<h3>BENEFITS</h3>
+			<ul>
+				<li>Apples are nutricious</li>
+				<li>Apples may be good for weight loss</li>
+				<li>Apples may be good for bone health</li>
+				<li>They're linked to a lowest risk of diabetes</li>
+			</ul>
+		</div>
+		<button class="buy--btn" data-aos="fade-up">ADD TO CART</button>
+</section>
+	</div>
+
+    </form>
+<script>
+    
+      const so=  document.getElementById('text_soluong').value;
+        var so1 = Number(so);
+       const cong =document.getElementById('btn_cong');
+       cong.addEventListener('click' , (e) => {
+            so1++;
+          document.getElementById("text_soluong").value = so1;
+
+       })
+
+        const tru =document.getElementById('btn_tru');
+       tru.addEventListener('click' , (e) => {
+            so1--;
+			if(so1 >= 1){
+          		document.getElementById("text_soluong").value = so1;
+
+			} 
+			else{
+				alert("Số lượng phải lớn hớn 1");
+			}
+
+       })
+    
+	function changeImage(id) {
+    let Img = document.getElementById(id).getAttribute('src');
+    document.getElementById(id).style.border = "3px solid coral";
+	console.log(Img)
+    document.getElementById("img_chitiet").setAttribute('src', Img);
+   
+
+}
+</script>
+</body>
+</html>

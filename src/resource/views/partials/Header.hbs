@@ -1,0 +1,25 @@
+
+ <header class="Header" style="color: white;">
+        <div > <img id="img_logo" src="https://scontent.fhan2-1.fna.fbcdn.net/v/t39.30808-6/275549265_119316327349050_7133039339301134607_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=-Q_O0zOexGEAX-VG_XL&_nc_ht=scontent.fhan2-1.fna&oh=00_AT9o0KErLgcU12wW7-9rS8-bZFudG_GQGV-eA2QV21fzdg&oe=6305D614" /> </div>
+        <div > <a href="/" style="color: white;">Trang Chủ </a> </div>
+        <div> Phân Loại </div>
+        <div> Về Chúng Tôi </div>
+        <div> Liên Hệ </div>
+        <form action="/timkiem" method="post">
+        <div class="timkiem">
+            <button  style="height: 27px;width: 10%;  position: relative; top: -3px; font-size:10px" > Tìm</button>
+            <input style="height: 25px;width: 60%;" name="tim">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        </form>
+        <div id="giohang"> <a href="/chitiet/cart" style="color: white;"><i class="fa-solid fa-cart-arrow-down"></i></a>  </div>
+        <div> Đăng Ký </div>
+    </header>
+<script>
+    window.addEventListener("scroll" , function(){
+        var Header = document.querySelector('header');
+        Header.classList.toggle("quy" , window.scrollY > 500);
+        
+       })
+</script>
+        

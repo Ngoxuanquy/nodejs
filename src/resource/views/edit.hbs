@@ -1,0 +1,22 @@
+<div style="width: 400px;">
+    Sửa Váy
+    <div>
+        <form method="post" action="/update/{{vay._id}}?_method=PUT" >
+             <label>STT</label>
+             <input type="text" name="STT" value="{{vay.STT}}"> <br />
+              <label>Name</label>
+              <input type="text" name="name" value="{{vay.name}}"><br />
+               <label>img</label>
+              <input type="text" name="img" value="{{vay.img}}"><br />
+              <label>img_phu1</label>
+              <input type="text" name="img_phu1" value="{{vay.img_phu1}}"><br />
+              <label>img_phu2</label>
+              <input type="text" name="img_phu2" value="{{vay.img_phu2}}"><br />
+              <label>Gia</label>
+              <input type="text" name="Gia" value="{{vay.Gia}}"><br />
+              <label>slug</label>
+              <input type="text" name="slug" value="{{vay.slug}}" >
+             <input type="submit" name="submit" value="Lưu">
+        </form>
+    </div>
+</div>
